@@ -1,0 +1,544 @@
+/*body*/
+body{
+    margin: 0;
+    background-color: white;
+}
+/*container principal*/
+.principal{
+    /*ocupar a janela toda*/
+    width: 100vw;
+    height: 100vh;
+    /*background*/
+    background-color: rgb(233, 233, 233);
+    /*new grid*/
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-rows: 100px 1fr 1fr 100px;
+}
+/*container one*/
+.central{
+/*posicao*/
+grid-column-start: 2;
+grid-column-end: 4;
+grid-row-start: 2;
+grid-row-end: 4;
+/*back-ground*/
+background-color: rgb(255, 255, 255);
+/*border properties*/
+border-radius: 75px;
+border: none;
+/*new grid*/
+display: grid;
+grid-template-columns: 1fr 1fr ;
+}
+/*container esquerdo*/
+.esquerdo{
+    /*posicao*/
+    grid-column-start: 1;
+    grid-column-end: 2;
+    /*tipo de display para centrar e por em coluna*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* h1 do esquerdo */
+.esquerdo h1{
+    /*back-ground*/
+    color:#45A6FF;
+    /*font properties*/
+    font-size: 160%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; 
+    opacity: 1;
+    /*transicao*/
+    transition: all 5s;
+}
+/*o after para de inicio ele aparecer*/
+.esquerdo h1::after{
+    opacity: 0;
+}
+/* h2 do esquerdo */
+.esquerdo h2{
+     /*font properties*/
+     color:#45A6FF;
+     font-size: 140%;
+     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; 
+     opacity: 1;
+      /*transicao*/
+    transition: all 5s;
+}
+/* p1 do esquerdo */
+.esquerdo p1{
+     /*font properties*/
+     color:#45A6FF;
+     font-size: 120%;
+     font-weight: bold;
+     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; 
+     opacity: 1;
+     /*transicao*/
+     transition: all 5s;
+}
+/*input username login*/
+#inputusername{
+    /*font properties*/
+    font-size: large;
+    /*border properties*/
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: #45A6FF;
+}
+/* p2 do esquerdo */
+.esquerdo p2{
+    /*font properties*/
+    color:#45A6FF;
+    font-size: 120%;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; 
+    opacity: 1;
+    /*transicao*/
+    transition: all 5s;
+    /*posicao*/
+    padding-top:10%;
+}
+/*input pass do login*/
+#inputpass{
+    /*font properties*/
+    font-size: large;
+    /*border properties*/
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: #45A6FF;
+    /*posicao*/
+    position: relative;
+    left: 5%;
+}
+/*imagem do field pass*/
+#image-see{
+    /*posicao*/
+    position: relative;
+    right: 10%;
+}
+/* p3 do esquerdo */
+.esquerdo p3{
+    /*font properties*/
+    color:#45A6FF;
+    font-size: 120%;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; 
+    opacity: 1;
+    /*transicao*/
+    transition: all 5s;
+}
+/* link para enviar para o register*/
+#aqui{
+    /*font properties*/
+    color:#45A6FF;
+    font-size: 80%;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif ; 
+    text-decoration: underline;
+    opacity: 1;
+    /*transicao*/
+    transition: all 5s;
+    /*tipo de cursor*/
+    cursor: pointer;
+}
+/* transicao para o ter o rato por cima*/
+#aqui:hover{
+    /*transicao*/
+    transition: all 2s;
+    /*cor quando passam por cima*/
+    color: salmon;
+}
+/*button login*/
+#buttonesq{
+    /*STYLE*/
+    width: 40%;
+    height: 10%;
+    border-radius: 15px;
+    border: none;
+    /*font properties*/ 
+    color: white;
+    font-size:100%;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; 
+    background:linear-gradient(to left ,#45A6FF 50%,#0d2942 50%)right;
+    background-size:200%;
+    /*transicao*/
+    transition: all 1s;
+    /*posicao*/
+    margin-top: 10%;
+    /*tipo de cursor ao passar por cima*/
+    cursor: pointer;
+}
+/* acao para quando o rato fica por cima do botao de login*/
+#buttonesq:hover {
+/*vai para a esquerda dnv*/
+background-position:left;
+}
+/*container direito*/
+.direito{
+    /*tipo de display/centrar items*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*posicao*/
+    grid-column-start: 2;
+    grid-column-end: 3;
+    /*border properties*/
+    border: none;
+    border-radius: 75px;
+    /*background*/
+    background-color: #45A6FF;
+   
+}
+/*imagem container direito*/
+#imagem{
+    height: 40%;
+    width: 60%;
+}
+
+/*container change*/
+.change{
+ display: none;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+/* h1 do change */
+.change h1{
+    /*back-ground*/
+    color:#45A6FF;
+    /*font properties*/
+    font-size: 160%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; 
+    opacity: 1;
+    /*transicao*/
+    transition: all 5s;
+}
+/*o after para de inicio ele aparecer*/
+.change h1::after{
+    opacity: 0;
+}
+/* h2 do change */
+.change h2{
+     /*font properties*/
+     color:#45A6FF;
+     font-size: 140%;
+     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; 
+     opacity: 1;
+      /*transicao*/
+    transition: all 5s;
+}
+/* p1 do change */
+.change p1{
+     /*font properties*/
+     color:#45A6FF;
+     font-size: 120%;
+     font-weight: bold;
+     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; 
+     opacity: 1;
+     /*transicao*/
+     transition: all 5s;
+}
+/*input username login*/
+#inputusernamech{
+    /*font properties*/
+    font-size: large;
+    /*border properties*/
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: #45A6FF;
+}
+/* p2 do change */
+.change p2{
+    /*font properties*/
+    color:#45A6FF;
+    font-size: 120%;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; 
+    opacity: 1;
+    /*transicao*/
+    transition: all 5s;
+}
+/*input pass do reigster*/
+#inputpasschone{
+    /*font properties*/
+    font-size: large;
+    /*border properties*/
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: #45A6FF;
+    /*posicao*/
+    position: relative;
+    left: 5%;
+}
+/*input pass do register*/
+#inputpasschdois{
+    /*font properties*/
+    font-size: large;
+    /*border properties*/
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: #45A6FF;
+    /*posicao*/
+    position: relative;
+    left: 5%;
+}
+/*input email do register*/
+#inputemailch{
+    /*font properties*/
+    font-size: large;
+    /*border properties*/
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: #45A6FF;
+}
+/*imagem do field pass*/
+#image-seeone{
+    /*posicao*/
+    position: relative;
+    right: 10%;
+}
+#image-seedois{
+    /*posicao*/
+    position: relative;
+    right: 10%;
+}
+/* p3 do change */
+.change p3{
+    /*font properties*/
+    color:#45A6FF;
+    font-size: 120%;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; 
+    opacity: 1;
+    /*transicao*/
+    transition: all 5s;
+}
+/* p4 do change */
+.change p4{
+      /*font properties*/
+      color:#45A6FF;
+      font-size: 120%;
+      font-weight: bold;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; 
+      opacity: 1;
+      /*transicao*/
+      transition: all 5s;
+}
+/* link para enviar para o register*/
+#aquich{
+    /*font properties*/
+    color:#45A6FF;
+    font-size: 80%;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif ; 
+    text-decoration: underline;
+    opacity: 1;
+    /*transicao*/
+    transition: all 5s;
+    /*tipo de cursor*/
+    cursor: pointer;
+}
+/* transicao para o ter o rato por cima*/
+#aquich:hover{
+    /*transicao*/
+    transition: all 2s;
+    /*cor quando passam por cima*/
+    color: salmon;
+}
+/*button login*/
+.change button{
+     /*STYLE*/
+     width: 40%;
+     height: 10%;
+     border-radius: 15px;
+     border: none;
+     /*font properties*/ 
+     color: white;
+     font-size:100%;
+     font-weight: bold;
+     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; 
+     background:linear-gradient(to left ,#45A6FF 50%,#0d2942 50%)right;
+     background-size:200%;
+     /*transicao*/
+     transition: all 1s;
+     /*posicao*/
+     margin-top: 10%;
+     /*tipo de cursor ao passar por cima*/
+     cursor: pointer;
+}
+/* acao para quando o rato fica por cima do botao de login*/
+.change button:hover {
+/*vai para a esquerda dnv*/
+background-position: left;
+}
+
+
+/*para as bars*/
+/*focus do text area(quando clicamos nele)*/
+textarea:focus, input:focus{
+        /*desativar a sublinhacao*/
+        outline: none;
+    }
+
+     /*breakpoint*/
+     @media screen and (max-width:800px) {
+        /*container principal*/
+        .principal{
+            background-color: white;
+        }
+        /*container central*/
+        .central{
+        display: flex;
+        }
+        /*imagem*/
+        #imagem{
+            height: 0%;
+            width: 0%;
+        }
+        /*imagem pass*/
+        #image-see{
+            visibility: hidden;
+        }
+        /*p3 do esquerdo*/
+        .esquerdo p3{
+            position: relative;
+            left: 5%;
+        }
+        /*esquerdo*/
+        .esquerdo{
+            /*nova posicao*/
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            position: relative;
+            left: 15%;
+        }
+        /*direito*/
+        .direito{
+            /*nova posicao*/
+            grid-column-start: 2;
+            grid-column-end: 3;
+            position: static;
+            display: none;
+            visibility: hidden;
+        }
+
+        .change{
+            position: relative;
+            left: 18%;
+        }
+
+    }
+
+    /*breakpoint*/
+    @media screen and (max-width:600px) {
+        /*container principal*/
+        .principal{
+            background-color: white;
+        }
+        /*container central*/
+        .central{
+        display: flex;
+        }
+        /*imagem*/
+        #imagem{
+            height: 0%;
+            width: 0%;
+        }
+        /*imagem pass*/
+        #image-see{
+            visibility: hidden;
+        }
+        /*p3 do esquerdo*/
+        .esquerdo p3{
+            position: relative;
+            left: 5%;
+        }
+        /*esquerdo*/
+        .esquerdo{
+            /*nova posicao*/
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+
+        }
+        /*direito*/
+        .direito{
+            /*nova posicao*/
+            grid-column-start: 2;
+            grid-column-end: 3;
+            position: static;
+            display: none;
+            visibility: hidden;
+        }
+
+    }
+
+    /*breakpoint*/
+    @media screen and (max-width:450px) {
+        /*container principal*/
+        .principal{
+            background-color: white;
+        }
+        /*container central*/
+        .central{
+        display: flex;
+        }
+        /*imagem*/
+        #imagem{
+            height: 0%;
+            width: 0%;
+        }
+        /*imagem pass*/
+        #image-see{
+            visibility: hidden;
+        }
+        /*p3 do esquerdo*/
+        .esquerdo p3{
+            position: relative;
+            left: 5%;
+        }
+        /*esquerdo*/
+        .esquerdo{
+            /*nova posicao*/
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            position: relative;
+            left: 0%;
+        }
+        /*direito*/
+        .direito{
+            /*nova posicao*/
+            grid-column-start: 2;
+            grid-column-end: 3;
+            position: static;
+            display: none;
+            visibility: hidden;
+        }
+
+        .change{
+            position: relative;
+            left: 0%;
+        }
+
+        #image-seeone{
+            visibility: hidden;
+        }
+        #image-seedois{
+            visibility: hidden;
+        }
+
+    }
